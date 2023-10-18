@@ -17,7 +17,7 @@ MAINTAINER vikashashoke@gmail.com
 RUN yum install -y httpd \
  zip\
  unzip
- ADD https://unsplash.com/s/photos/full-hd-wallpaper
+ ADD https://www.free-css.com/free-css-templates/page296/spering.zip /var/www/html/
  WORKDIR /var/www/html/
  RUN unzip shine.zip
  RUN cp -rvf shine/* .
