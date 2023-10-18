@@ -19,8 +19,8 @@ RUN yum install -y httpd \
  unzip
  ADD https://www.free-css.com/free-css-templates/page296/spering.zip /var/www/html/
  WORKDIR /var/www/html/
- RUN unzip shine.zip
- RUN cp -rvf shine/* .
- RUN rm -rf shine shine.zip
+ RUN unzip spering.zip
+ RUN cp -rvf spering/* .
+ RUN rm -rf spering spering.zip
  CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
  EXPOSE 80
